@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wireframe — Virgin Active Chad le Clos Swim Academy (Conversion-Optimised)</title>
+  <meta name="description" content="Conversion-optimised wireframe for the Virgin Active Chad le Clos Swim Academy programme page." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============================================
+       HEADER
+       ============================================ -->
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <div class="site-header__logo" aria-label="Logo placeholder"></div>
+      <nav class="site-header__nav" aria-label="Primary">
+        <a href="#">Memberships</a>
+        <a href="#">Clubs</a>
+        <a href="#">Classes</a>
+        <a href="#">Academy</a>
+      </nav>
+      <a href="#enrol" class="btn btn--primary btn--sm">Join now</a>
+    </div>
+  </header>
+
+  <!-- ============================================
+       SECTION 1 — HERO
+       (sells outcome + dual-path CTAs with qualifiers + quiz route)
+       ============================================ -->
+  <section class="hero" id="hero">
+    <div class="wrap">
+      <div class="hero__grid">
+        <div class="hero__copy">
+          <span class="label eyebrow">Virgin Active × Chad le Clos</span>
+          <h1 class="h1">Olympic-level swim coaching for every swimmer.</h1>
+          <p class="b1">From first splashes to competitive squads — train inside South Africa's only swim academy built on Chad le Clos's coaching methodology.</p>
+
+          <div class="hero__cta-row" role="group" aria-label="Choose your programme">
+            <button class="hero__cta-card" aria-describedby="cta-lts-desc">
+              <span class="label">Path 01</span>
+              <span class="b2">Learn to Swim</span>
+              <span class="b3" id="cta-lts-desc">Ages 3–12 · all levels, water-shy welcome</span>
+              <span class="b3" style="color: var(--link); margin-top: var(--s-8);">Choose this path →</span>
+            </button>
+            <button class="hero__cta-card" aria-describedby="cta-comp-desc">
+              <span class="label">Path 02</span>
+              <span class="b2">Competitive Squad</span>
+              <span class="b3" id="cta-comp-desc">For swimmers ready to race · age 8+</span>
+              <span class="b3" style="color: var(--link); margin-top: var(--s-8);">Choose this path →</span>
+            </button>
+          </div>
+
+          <a href="#quiz" class="hero__quiz-link">
+            Not sure which is right for your child? Take the 30-second quiz →
+          </a>
+        </div>
+
+        <div class="hero__media">
+          <div class="placeholder" role="img" aria-label="Hero image placeholder — coach with young swimmer at poolside"></div>
+          <span class="note">Image: short hero, mobile-cropped</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 2 — CHAD LE CLOS CREDIBILITY
+       (the differentiator parents need to see early)
+       ============================================ -->
+  <section class="cred" aria-labelledby="cred-title">
+    <div class="wrap">
+      <div class="cred__inner">
+        <div class="cred__portrait" aria-label="Chad le Clos portrait placeholder"></div>
+        <div class="cred__copy">
+          <span class="label">Built with</span>
+          <h2 class="h4" id="cred-title">A coaching programme designed by an Olympic medallist.</h2>
+          <p class="b2">Every level — from 4-year-olds learning to float to elite race squads — trains under the same methodology Chad uses with international competitors.</p>
+        </div>
+        <div class="cred__stats" aria-label="Credibility stats">
+          <div>
+            <div class="stat-num">4×</div>
+            <div class="stat-label">Olympic medals</div>
+          </div>
+          <div>
+            <div class="stat-num">15+</div>
+            <div class="stat-label">Years coaching</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 3 — BENEFITS (4 cards)
+       (replaces the duplicate "Why join" + "Why should I" blocks)
+       ============================================ -->
+  <section class="section" aria-labelledby="benefits-title">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="label eyebrow">Why this academy</span>
+        <h2 class="h2" id="benefits-title">Coaching that takes your swimmer further — at every level.</h2>
+      </div>
+
+      <div class="grid grid--4">
+        <article class="benefit">
+          <div class="placeholder placeholder--icon" aria-hidden="true"></div>
+          <h3 class="h6">Olympic-calibre methodology</h3>
+          <p class="b2">A single, structured progression Chad and his coaches refined for elite athletes — applied at every level.</p>
+        </article>
+        <article class="benefit">
+          <div class="placeholder placeholder--icon" aria-hidden="true"></div>
+          <h3 class="h6">Squad-based progression</h3>
+          <p class="b2">Five clear levels from beginner to competitive, so swimmers always know what's next.</p>
+        </article>
+        <article class="benefit">
+          <div class="placeholder placeholder--icon" aria-hidden="true"></div>
+          <h3 class="h6">Expert coaches, every session</h3>
+          <p class="b2">All Academy coaches are trained and assessed against the Chad le Clos coaching standard.</p>
+        </article>
+        <article class="benefit">
+          <div class="placeholder placeholder--icon" aria-hidden="true"></div>
+          <h3 class="h6">Pools designed for serious training</h3>
+          <p class="b2">Heated 25m lanes, dedicated training times, and equipment for technique, fitness and race work.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 4 — SQUAD LEVELS (stacked cards on mobile)
+       (replaces the dense table)
+       ============================================ -->
+  <section class="section section--alt" aria-labelledby="levels-title">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="label eyebrow">Squad levels</span>
+        <h2 class="h2" id="levels-title">Find the right level for your swimmer.</h2>
+        <p class="b1 muted">Each level has clear entry criteria, training focus, and a path to the next squad.</p>
+      </div>
+
+      <div class="levels-stack">
+        <article class="level-card">
+          <div class="level-card__head">
+            <span class="label">Level 01 / 02</span>
+            <h3 class="h5">Entry Squad</h3>
+          </div>
+          <div class="level-card__body">
+            <p class="b2">Stroke fundamentals across all four strokes. Builds water awareness, breathing technique, and endurance for first competitive sessions.</p>
+          </div>
+          <span class="level-card__age">Ages 7–12</span>
+        </article>
+
+        <article class="level-card">
+          <div class="level-card__head">
+            <span class="label">Level 03</span>
+            <h3 class="h5">Intermediate</h3>
+          </div>
+          <div class="level-card__body">
+            <p class="b2">Refining technique across all strokes, introducing aerobic base training and an early competition mindset.</p>
+          </div>
+          <span class="level-card__age">Ages 10–14</span>
+        </article>
+
+        <article class="level-card">
+          <div class="level-card__head">
+            <span class="label">Level 04</span>
+            <h3 class="h5">Advanced</h3>
+          </div>
+          <div class="level-card__body">
+            <p class="b2">Higher-volume training and race-pace sets. Swimmers compete consistently throughout the season.</p>
+          </div>
+          <span class="level-card__age">Ages 12–18</span>
+        </article>
+
+        <article class="level-card">
+          <div class="level-card__head">
+            <span class="label">Elite Squad</span>
+            <h3 class="h5">Elite</h3>
+          </div>
+          <div class="level-card__body">
+            <p class="b2">High-performance athletes competing at SA Junior Nationals and SA Seniors. Training-intensive, individually structured.</p>
+          </div>
+          <span class="level-card__age">Ages 13–22</span>
+        </article>
+
+        <article class="level-card">
+          <div class="level-card__head">
+            <span class="label">Adult Squad</span>
+            <h3 class="h5">Masters / Adult</h3>
+          </div>
+          <div class="level-card__body">
+            <p class="b2">Recreational and fitness swimmers, including triathletes and open-water participants. Two technical groups offered, fitness or skill-led.</p>
+          </div>
+          <span class="level-card__age">Adults 18+</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 5 — CLUB FINDER
+       (low-friction "where can I do this?" answer before the enrol step)
+       ============================================ -->
+  <section class="section" aria-labelledby="finder-title">
+    <div class="wrap">
+      <div class="finder">
+        <div>
+          <span class="label eyebrow">Find a pool</span>
+          <h2 class="h2" id="finder-title">Find your nearest Academy pool.</h2>
+          <p class="b1 muted">Available at participating Virgin Active clubs across South Africa. Enter your suburb or postal code to see the closest options and available times.</p>
+
+          <form class="finder-form" role="search" aria-label="Find your nearest Academy pool">
+            <input type="text" name="location" placeholder="Suburb or postal code" aria-label="Suburb or postal code" />
+            <button type="submit" class="btn btn--primary">Find a pool</button>
+          </form>
+        </div>
+        <div class="finder-map">
+          <div class="placeholder" aria-label="Map placeholder — clubs across South Africa"></div>
+          <span class="note">Map: pin participating clubs</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 6 — HOW TO ENROL (3 steps)
+       (replaces the buried "How to join" block)
+       ============================================ -->
+  <section class="section section--alt-2" aria-labelledby="enrol-title" id="enrol">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="label eyebrow">How it works</span>
+        <h2 class="h2" id="enrol-title">Enrol in three steps.</h2>
+      </div>
+
+      <div class="grid grid--3 steps">
+        <article class="step">
+          <h3 class="h6">Pick a path</h3>
+          <p class="b2">Choose Learn to Swim or Competitive Squad — or take the 30-second quiz to find the right starting level.</p>
+        </article>
+        <article class="step">
+          <h3 class="h6">Book a free assessment</h3>
+          <p class="b2">A coach assesses your swimmer in-pool to confirm the right squad. Twenty minutes, no commitment.</p>
+        </article>
+        <article class="step">
+          <h3 class="h6">Start training</h3>
+          <p class="b2">Add the Academy to your Virgin Active membership and start in your first session within seven days.</p>
+        </article>
+      </div>
+
+      <div style="margin-top: var(--s-48); display: flex; gap: var(--s-12); flex-wrap: wrap;">
+        <a class="btn btn--primary" href="#">Book a free assessment</a>
+        <a class="btn btn--secondary" href="#quiz">Take the 30-second quiz</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 7 — SWIM-SPECIFIC TESTIMONIALS
+       (replaces the generic Virgin Active reviews)
+       ============================================ -->
+  <section class="section" aria-labelledby="testimonials-title">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="label eyebrow">From parents and swimmers</span>
+        <h2 class="h2" id="testimonials-title">Why families choose the Academy.</h2>
+      </div>
+
+      <div class="grid grid--3">
+        <article class="testimonial">
+          <p class="testimonial__quote">"Our daughter went from being scared of water to competing at her first gala in eight months. The progression is honest and the coaches actually care."</p>
+          <div class="testimonial__attr">
+            <div class="placeholder placeholder--avatar" aria-hidden="true"></div>
+            <div class="testimonial__attr-text">
+              <p class="b2">Parent of swimmer, age 9</p>
+              <p class="b3">Learn to Swim → Entry Squad</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial">
+          <p class="testimonial__quote">"The coaching is properly structured. There are clear standards to meet before you move up — it's the closest thing to elite training I've seen at this level."</p>
+          <div class="testimonial__attr">
+            <div class="placeholder placeholder--avatar" aria-hidden="true"></div>
+            <div class="testimonial__attr-text">
+              <p class="b2">Parent of swimmer, age 14</p>
+              <p class="b3">Advanced Squad</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial">
+          <p class="testimonial__quote">"I joined the adult squad after a 10-year break. Two months in, my technique is sharper than it was in school. Genuinely brilliant coaches."</p>
+          <div class="testimonial__attr">
+            <div class="placeholder placeholder--avatar" aria-hidden="true"></div>
+            <div class="testimonial__attr-text">
+              <p class="b2">Adult swimmer, age 32</p>
+              <p class="b3">Masters Squad</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 8 — FAQs (cut to 7, swim-specific only)
+       ============================================ -->
+  <section class="section section--alt" aria-labelledby="faq-title">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="label eyebrow">FAQs</span>
+        <h2 class="h2" id="faq-title">Common questions, briefly answered.</h2>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq">
+          <summary>Do I need to be a Virgin Active member?</summary>
+          <div class="faq__body b2">Yes — Academy programmes are an add-on to a Virgin Active membership. Membership and Academy can be joined together at sign-up.</div>
+        </details>
+        <details class="faq">
+          <summary>What ages do you coach?</summary>
+          <div class="faq__body b2">Learn to Swim from age 3, competitive squads from 7+, and adult squads for swimmers 18 and over.</div>
+        </details>
+        <details class="faq">
+          <summary>How are squads selected?</summary>
+          <div class="faq__body b2">A coach runs a free in-pool assessment so we place every swimmer in the right level — never just by age.</div>
+        </details>
+        <details class="faq">
+          <summary>Where can I train?</summary>
+          <div class="faq__body b2">At participating Virgin Active clubs nationwide. Use the club finder above to see your nearest options.</div>
+        </details>
+        <details class="faq">
+          <summary>Will my child compete?</summary>
+          <div class="faq__body b2">Only when they're ready and only if they want to. Competition is built into the squad path but is not required for Learn to Swim or Adult squads.</div>
+        </details>
+        <details class="faq">
+          <summary>How much does it cost?</summary>
+          <div class="faq__body b2">Pricing depends on your club and squad. After you book a free assessment, we send a tailored quote with available session times.</div>
+        </details>
+        <details class="faq">
+          <summary>Can I cancel or move squads?</summary>
+          <div class="faq__body b2">Yes. You can pause, cancel, or move squads at any time — coaches re-assess swimmers each term to make sure they're in the right place.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 9 — FINAL CTA
+       ============================================ -->
+  <section class="final-cta" id="quiz" aria-labelledby="final-cta-title">
+    <div class="wrap">
+      <span class="label eyebrow">Ready to start?</span>
+      <h2 class="h2" id="final-cta-title">Book a free assessment and find your swimmer's level.</h2>
+      <p class="b1">Twenty minutes in-pool with an Academy coach. No membership commitment until you've seen the programme.</p>
+      <div class="btn-row">
+        <a class="btn btn--primary" href="#">Book a free assessment</a>
+        <a class="btn btn--secondary" href="#">Take the 30-second quiz</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="site-footer__grid">
+        <div>
+          <span class="label">Academy</span>
+          <a href="#">About</a>
+          <a href="#">Squad levels</a>
+          <a href="#">Club finder</a>
+          <a href="#">Book assessment</a>
+        </div>
+        <div>
+          <span class="label">Membership</span>
+          <a href="#">Plans</a>
+          <a href="#">Joining offers</a>
+          <a href="#">Classes</a>
+          <a href="#">Clubs</a>
+        </div>
+        <div>
+          <span class="label">Support</span>
+          <a href="#">Help centre</a>
+          <a href="#">Contact</a>
+          <a href="#">FAQs</a>
+        </div>
+        <div>
+          <span class="label">Company</span>
+          <a href="#">About Virgin Active</a>
+          <a href="#">Press</a>
+          <a href="#">Careers</a>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        © Virgin Active South Africa · Wireframe — Conversion-optimised draft
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
